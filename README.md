@@ -53,6 +53,45 @@ Run `cli.py` using your Python interpreter:
 python cli.py [command] [argument]
 ```
 
+### Dashboard Preview
+
+```text
+========================================
+           L I F E   E N G I N E
+========================================
+OVERALL SCORE:  45.8 [■■■■■□□□□□]
+----------------------------------------
+
+VITALITY       [■■■■■□□□□□]  49.5
+  ├─ Breath Control    :  49.5
+  └─ Strength          :  49.5
+
+COGNITION      [■■■■■□□□□□]  49.8
+  ├─ Intelligence      :  49.8
+  └─ Focus             :  49.8
+
+DISCIPLINE     [■■■□□□□□□□]  29.9
+  ├─ Grit              :  34.9
+  └─ Willpower         :  34.9
+
+EMOTIONAL CORE [■■■■■□□□□□]  49.8
+  ├─ Resilience        :  49.9
+  └─ Antifragility     :  49.9
+
+SOCIAL         [■■■■■□□□□□]  49.8
+  ├─ Charisma          :  49.8
+  └─ Assertiveness     :  49.8
+
+AGENCY         [■■■■■□□□□□]  49.8
+  ├─ Integrity         :  49.8
+  └─ Adaptability      :  49.8
+
+----------------------------------------
+Consistency (Last 7 Days): [□□□□□□□□□□]   0.0% (0/7 days active)
+Last Update              : just now
+========================================
+```
+
 ### Supported Commands
 
 | Command | Argument / Flag | Description |

@@ -91,18 +91,23 @@ def print_dashboard(state, config, show_full=False):
             
         if show_full:
             # Show all sub-attributes and their fundamentals
-            for sub_name, val in sub_list:
-                print(f"{CHAR_BRANCH}{sub_name.replace('_', ' ').title():<18}: {val:5.1f}")
+            for sub_idx, (sub_name, val) in enumerate(sub_list):
+                is_last_sub = (sub_idx == len(sub_list) - 1)
+                sub_branch = CHAR_SUB_LEAF if is_last_sub else CHAR_BRANCH
+                print(f"{sub_branch}{sub_name.replace('_', ' ').title():<18}: {val:5.1f}")
                 # Print underlying fundamentals for this sub
                 funds = subs[sub_name]
                 for fund_name, weight in funds.items():
                     fund_val = fundamentals.get(fund_name, 50.0)
-                    print(f"{CHAR_LEAF}{fund_name:<16} (w={weight:0.2f}): {fund_val:5.1f}")
+                    prefix = ("     └─ " if CHAR_SHOCK == "⚡" else "     `- ") if is_last_sub else CHAR_LEAF
+                    print(f"{prefix}{fund_name:<16} (w={weight:0.2f}): {fund_val:5.1f}")
         else:
             # Sort and show top 2 sub-attributes
             sub_list.sort(key=lambda x: x[1], reverse=True)
-            for sub_name, val in sub_list[:2]:
-                print(f"{CHAR_BRANCH}{sub_name.replace('_', ' ').title():<18}: {val:5.1f}")
+            display_list = sub_list[:2]
+            for idx, (sub_name, val) in enumerate(display_list):
+                branch = CHAR_SUB_LEAF if idx == len(display_list) - 1 else CHAR_BRANCH
+                print(f"{branch}{sub_name.replace('_', ' ').title():<18}: {val:5.1f}")
                 
     print("\n" + "-" * 40)
     consistency = fundamentals.get("consistency", 0.0)
