@@ -1,0 +1,301 @@
+{
+  "hierarchy": {
+    "vitality": {
+      "subs": {
+        "strength": {
+          "exercise": 0.5,
+          "nutrition": 0.3,
+          "recovery": 0.1,
+          "sleep": 0.1
+        },
+        "constitution": {
+          "sleep": 0.3,
+          "nutrition": 0.3,
+          "exercise": 0.2,
+          "recovery": 0.2
+        },
+        "interoception": {
+          "recovery": 0.4,
+          "sleep": 0.3,
+          "nutrition": 0.2,
+          "exercise": 0.1
+        },
+        "breath_control": {
+          "exercise": 0.4,
+          "recovery": 0.4,
+          "sleep": 0.2,
+          "nutrition": 0.0
+        }
+      },
+      "weight": 0.15
+    },
+    "cognition": {
+      "subs": {
+        "intelligence": {
+          "curiosity": 0.4,
+          "clarity": 0.3,
+          "cognitive_flexibility": 0.3
+        },
+        "focus": {
+          "clarity": 0.6,
+          "cognitive_flexibility": 0.2,
+          "curiosity": 0.2
+        },
+        "memory": {
+          "clarity": 0.4,
+          "cognitive_flexibility": 0.3,
+          "curiosity": 0.3
+        },
+        "creativity": {
+          "curiosity": 0.5,
+          "cognitive_flexibility": 0.5,
+          "clarity": 0.0
+        },
+        "metacognition": {
+          "clarity": 0.5,
+          "cognitive_flexibility": 0.3,
+          "curiosity": 0.2
+        }
+      },
+      "weight": 0.2
+    },
+    "discipline": {
+      "subs": {
+        "willpower": {
+          "self_efficacy": 0.5,
+          "consistency": 0.3,
+          "ambiguity_tolerance": 0.2
+        },
+        "grit": {
+          "ambiguity_tolerance": 0.4,
+          "self_efficacy": 0.3,
+          "consistency": 0.3
+        },
+        "impulse_control": {
+          "consistency": 0.5,
+          "self_efficacy": 0.3,
+          "ambiguity_tolerance": 0.2
+        },
+        "urgency": {
+          "self_efficacy": 0.4,
+          "consistency": 0.4,
+          "ambiguity_tolerance": 0.2
+        },
+        "pacing": {
+          "consistency": 0.5,
+          "ambiguity_tolerance": 0.3,
+          "self_efficacy": 0.2
+        }
+      },
+      "weight": 0.2
+    },
+    "emotional_core": {
+      "subs": {
+        "resilience": {
+          "acceptance": 0.4,
+          "self_awareness": 0.3,
+          "patience": 0.3
+        },
+        "emotional_regulation": {
+          "self_awareness": 0.5,
+          "patience": 0.3,
+          "acceptance": 0.2
+        },
+        "non_reactivity": {
+          "patience": 0.5,
+          "self_awareness": 0.3,
+          "acceptance": 0.2
+        },
+        "antifragility": {
+          "acceptance": 0.4,
+          "self_awareness": 0.4,
+          "patience": 0.2
+        }
+      },
+      "weight": 0.15
+    },
+    "social": {
+      "subs": {
+        "charisma": {
+          "humor": 0.4,
+          "active_listening": 0.4,
+          "boundary_setting": 0.2
+        },
+        "empathy": {
+          "active_listening": 0.6,
+          "boundary_setting": 0.2,
+          "humor": 0.2
+        },
+        "assertiveness": {
+          "boundary_setting": 0.6,
+          "active_listening": 0.3,
+          "humor": 0.1
+        },
+        "communication": {
+          "active_listening": 0.4,
+          "humor": 0.3,
+          "boundary_setting": 0.3
+        },
+        "discernment": {
+          "boundary_setting": 0.5,
+          "active_listening": 0.4,
+          "humor": 0.1
+        }
+      },
+      "weight": 0.15
+    },
+    "agency": {
+      "subs": {
+        "purpose": {
+          "meaning_making": 0.6,
+          "presence": 0.3,
+          "control": 0.1
+        },
+        "integrity": {
+          "meaning_making": 0.4,
+          "presence": 0.4,
+          "control": 0.2
+        },
+        "adaptability": {
+          "presence": 0.4,
+          "control": 0.3,
+          "meaning_making": 0.3
+        },
+        "risk_assessment": {
+          "control": 0.5,
+          "meaning_making": 0.3,
+          "presence": 0.2
+        }
+      },
+      "weight": 0.15
+    }
+  },
+  "decay_rates": {
+    "sleep": 2.0,
+    "nutrition": 1.5,
+    "exercise": 1.0,
+    "recovery": 1.0,
+    "curiosity": 0.5,
+    "clarity": 0.5,
+    "cognitive_flexibility": 0.5,
+    "self_efficacy": 0.5,
+    "ambiguity_tolerance": 0.3,
+    "self_awareness": 0.4,
+    "acceptance": 0.3,
+    "patience": 0.4,
+    "active_listening": 0.6,
+    "boundary_setting": 0.4,
+    "humor": 0.3,
+    "meaning_making": 0.5,
+    "presence": 0.4,
+    "control": 0.5
+  },
+  "actions": {
+    "deep_work": {
+      "name": "Deep Work Session",
+      "aliases": [
+        "dw"
+      ],
+      "effects": {
+        "curiosity": 2.0,
+        "clarity": 1.0
+      }
+    },
+    "workout": {
+      "name": "Workout",
+      "aliases": [
+        "wo"
+      ],
+      "effects": {
+        "exercise": 3.0,
+        "recovery": -1.0
+      }
+    },
+    "meditation": {
+      "name": "Meditation",
+      "aliases": [
+        "med"
+      ],
+      "effects": {
+        "recovery": 2.0,
+        "patience": 1.0,
+        "clarity": 1.0
+      }
+    },
+    "networking": {
+      "name": "Networking",
+      "aliases": [
+        "net"
+      ],
+      "effects": {
+        "active_listening": 1.0,
+        "boundary_setting": 1.0
+      }
+    },
+    "sleep_8hrs": {
+      "name": "Sleep 8 Hours",
+      "aliases": [
+        "sl",
+        "sleep"
+      ],
+      "effects": {
+        "sleep": 5.0,
+        "recovery": 3.0
+      }
+    },
+    "junk_food": {
+      "name": "Junk Food",
+      "aliases": [
+        "jf"
+      ],
+      "effects": {
+        "nutrition": -3.0
+      }
+    },
+    "doom_scrolling": {
+      "name": "Doom Scrolling",
+      "aliases": [
+        "ds",
+        "doom"
+      ],
+      "effects": {
+        "self_efficacy": -2.0,
+        "clarity": -2.0
+      }
+    }
+  },
+  "synergies": [
+    {
+      "id": "discipline_boosts_cognition",
+      "trigger_attribute": "discipline",
+      "threshold": 70.0,
+      "multiplier": 1.2,
+      "target_category": "cognition",
+      "description": "High Discipline boosts Cognition actions by +20%"
+    },
+    {
+      "id": "vitality_boosts_discipline",
+      "trigger_attribute": "vitality",
+      "threshold": 70.0,
+      "multiplier": 1.2,
+      "target_category": "discipline",
+      "description": "High Vitality boosts Discipline actions by +20%"
+    },
+    {
+      "id": "self_awareness_boosts_emotional",
+      "trigger_attribute": "self_awareness",
+      "threshold": 70.0,
+      "multiplier": 1.2,
+      "target_category": "emotional_core",
+      "description": "High Self-Awareness boosts Emotional Core actions by +20%"
+    },
+    {
+      "id": "focus_boosts_cognition",
+      "trigger_attribute": "focus",
+      "threshold": 70.0,
+      "multiplier": 1.2,
+      "target_category": "cognition",
+      "description": "High Focus boosts Cognition actions by +20%"
+    }
+  ]
+}
